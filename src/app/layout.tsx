@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: "把说不清的问题，先看清。",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

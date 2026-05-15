@@ -2,14 +2,14 @@ import { Search, RefreshCw, ArrowRight, ChevronRight } from "lucide-react";
 
 export default function HistoryPage() {
   return (
-    <div className="flex justify-center w-full" style={{ padding: '4rem 2rem' }}>
+    <div className="flex justify-center w-full page-padding">
       <div style={{ maxWidth: '1024px', width: '100%' }}>
         <div className="mb-10">
           <h1 className="font-semibold text-2xl mb-2">过往看见</h1>
           <p className="text-muted text-sm">这里沉淀的是聊天记录——更是你在每一次思考中真正看清的东西。</p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '320px 1fr', gap: '3rem' }}>
+        <div className="history-grid">
           
           {/* Left Sidebar */}
           <div>

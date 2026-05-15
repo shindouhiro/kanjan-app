@@ -3,13 +3,13 @@ import { ArrowRight, Compass, Target, Anchor, Users, Play, BookOpen } from "luci
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center w-full" style={{ padding: '4rem 1rem' }}>
+    <div className="flex flex-col items-center w-full page-padding">
       
       {/* Top Section */}
       <div style={{ maxWidth: '720px', width: '100%' }}>
         <div className="flex flex-col items-center text-center mb-10">
           <div style={{ width: '4px', height: '4px', backgroundColor: 'var(--muted-foreground)', borderRadius: '50%', marginBottom: '1.5rem', boxShadow: '0 0 10px rgba(0,0,0,0.2)' }}></div>
-          <h1 className="mb-4 text-gradient" style={{ fontFamily: '"Songti SC", "STSong", "Noto Serif SC", serif', fontSize: '3.5rem', fontWeight: 500, letterSpacing: '0.02em' }}>
+          <h1 className="mb-4 text-gradient hero-title" style={{ fontFamily: '"Songti SC", "STSong", "Noto Serif SC", serif', fontWeight: 500, letterSpacing: '0.02em' }}>
             把说不清的问题，先看清。
           </h1>
           <p className="text-muted" style={{ fontSize: '1rem', letterSpacing: '0.05em' }}>
@@ -54,7 +54,7 @@ export default function Home() {
       </div>
 
       {/* Bottom Grid Section */}
-      <div style={{ maxWidth: '1024px', width: '100%', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '3rem', display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4rem' }}>
+      <div className="bottom-grid" style={{ maxWidth: '1024px', width: '100%', borderTop: '1px solid rgba(0,0,0,0.05)', paddingTop: '3rem' }}>
         
         {/* Column 1 */}
         <div>
